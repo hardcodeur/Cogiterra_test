@@ -1,0 +1,218 @@
+/* 1-NAV */
+
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: cadetblue;
+}
+
+.nav-title {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav-title > h1 {
+  color: white;
+  margin: 0 1em;
+}
+
+.nav-action {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-action > button {
+  margin: 0 1em;
+  border: none;
+}
+
+.nav-action > button > a {
+  text-decoration: none;
+}
+
+/* END NAV */
+
+/* FORM-PAGE */
+
+.save-title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-box {
+  text-align: center;
+}
+
+.tab-box > form {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-box > form > fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+}
+
+.tab-box > form > fieldset label {
+  margin: 0.5em 0;
+}
+
+.btn-box {
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-box > button {
+  margin: 0 1em;
+}
+/* END FORM-PAGE */
+
+/* LISTING */
+
+.listing-box {
+  margin-top: 5em;
+  height: auto;
+}
+
+.info-contact,
+.info-localisation {
+  padding: 0.5em;
+  width: 50%;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 0;
+}
+
+.card-title {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  background-color: cadetblue;
+  color: white;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  background: cadetblue;
+  color: white;
+}
+
+.card-footer > button {
+  height: 2em;
+}
+
+/* END LISTING */
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  margin-top: 5em;
+  background: cadetblue;
+  color: white;
+}
+
+/* END FOOTER */
+
+/* ERROR */
+.error-box {
+  background-color: red;
+  color: white;
+  padding: 0.5em;
+  height: 2em;
+  font-weight: bold;
+}
+
+/* LAYOUT */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+.save-title-box,
+.tab-box,
+.listing-box {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* END LAYOUT */
+
+/* MEDIA QUERY */
+
+/* Telephone */
+@media (min-width: 320px) and (max-width: 480px) {
+  .tab-box > form {
+    flex-direction: column;
+  }
+
+  .tab-box > form > fieldset {
+    padding: 0 3em;
+    margin: 1em;
+  }
+
+  .tab-box > form > fieldset label {
+    margin: 0.5em 0;
+  }
+
+  .tab-box > form > fieldset input {
+    margin: 0.5em;
+  }
+
+  .tab-box > form > fieldset select {
+    margin: 0.5em;
+  }
+
+  .save-title-box,
+  .tab-box,
+  .listing-box {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+/* END MEDIA QUERY */

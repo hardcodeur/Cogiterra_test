@@ -45,10 +45,13 @@ git clone https://github.com/hardcodeur/Cogiterra_test.git
 1. **Connexion BDD** : Configurez les informations de connexion dans le fichier `./php/bdd/config.php` :
    ```php
    <?php
-   $host = 'votre_hote';
-   $dbname = 'votre_base_de_donnees';
-   $username = 'votre_utilisateur';
-   $password = 'votre_mot_de_passe';
+   define("HOST","votre_host");
+   
+   define("DB","votre_bdd");
+   
+   define("USER","votre_id");
+   
+   define("PASSWORD","votre_pass");
    ```
 2. **Importation de la structure de la table** : Importez le fichier `./sql/directories_table.sql` dans votre base de données pour créer la table `contacts`.
 
